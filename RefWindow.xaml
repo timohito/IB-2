@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfApp1.RefWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IB2"
+        mc:Ignorable="d"
+       Title="О программе" Height="200" Width="300">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="#003466"/>
+            <Setter Property="FontSize" Value="15px"/>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Ахметов Тимур Ринатович" />
+        <Label Grid.Row="1" Grid.Column="0" Content="ПИбд-41" />
+        <Label Grid.Row="2" Grid.Column="0" Content="2 Вариант" />
+        <Label Grid.Row="3" Grid.Column="0" Content="Алгоритм DES в режиме CBC" />
+    </Grid>
+</Window>
